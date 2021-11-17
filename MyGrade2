@@ -1,0 +1,39 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class MyGrade2 {
+	
+	public static void main (String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your mark: ");
+		int x = sc.nextInt();
+		
+		//if else statement
+		if((x >= 90) && (x <=100)) {
+			System.out.println("Excellent: Grade A");	
+		} 
+		else if((x>=80)&&(x<=89)) {
+			System.out.println("Very Good: Grade B");
+		}
+		else if((x>=70)&&(x<=79)) {
+			System.out.println("Good: Grade C");
+		}
+		else if((x>=60)&&(x<=69)) {
+			System.out.println("Good: Grade D");
+		}
+		else if((x>=50)&&(x<=59)) {
+			System.out.println("Good: Grade E");
+		}
+		else if((x>=40)&&(x<=49)) {
+			System.out.println("Just Passed: Grade F");
+		}else {
+			System.out.println("Failed");
+		}
+		
+		
+		sc.close();
+	}
+}
