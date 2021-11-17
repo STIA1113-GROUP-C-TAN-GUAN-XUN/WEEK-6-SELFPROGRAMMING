@@ -1,0 +1,67 @@
+package controlStructure;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+	
+	public static void main (String [] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the name of your Subject 1: ");
+		String a = sc.nextLine();
+		
+		System.out.println("Enter the name of your Subject 2: ");
+		String b = sc.nextLine();
+		
+		System.out.println("Enter the mark of your Subject 1: ");
+		int x = sc.nextInt();
+		
+		System.out.println("Enter the mark of your Subject 2: ");
+		int y = sc.nextInt();
+		
+		if((x>=50) && (x<=100)) {
+			System.out.println("Your Subject 1 is: " + a);
+			System.out.println("Your Subject 1 mark is greater than 50%, PASS: " + x);
+			System.out.println();
+			
+		}else {
+			System.out.println("Your Subject 1 is: " + a);
+			System.out.println("Your Subejct 1 is lower than 50%, FAIL: " + x);
+			System.out.println();
+		}
+		
+		if((y>=50) && (y<=100)) {
+			System.out.println("Your Subject 2 is: " + b);
+			System.out.println("Your Subject 2 is greater than 50%, PASS: " + y);
+			System.out.println();
+		}else {
+			System.out.println("Your Subject 2 is: " + b);
+			System.out.println("Your Subject 2 is lower than 50%, FAIL: " + y);
+			System.out.println();
+		}
+		
+		if(x>y) {
+			System.out.println("Your total mark of Subject 1 is greater than Subject 2 ");
+		}else {
+			System.out.println("Your total mark of Subeject 2 is greater than Subject 1 ");
+		}
+		
+		double z = (x+y)/2;
+		
+		if ((z>= 80)&&(z<=100)) {
+			System.out.println("Average mark of Subject 1 & 2: Gred A");
+		}else if((z>=60)&&(z<=79)) {
+			System.out.println("Average mark of Subject 1 & 2: Gred B");
+		}else if((z>=50)&&(z<=59)) {
+			System.out.println("Average mark of Subject 1 & 2: Gred C");
+		}else if((z>=0)&&(z<=49)) {
+			System.out.println("Average mark of Subject 1 & 2: Fail");
+		}else {
+			System.out.println("ERROR");
+		}
+		
+		
+	}
+
+}
