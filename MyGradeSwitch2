@@ -1,0 +1,62 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class MyGradeSwitch2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your mark: ");
+		int x = sc.nextInt();
+		
+		//switch statement (only can int or char, cannot double)
+		if((x>=90)&&(x<=100)) {
+			x = 1;
+		}
+		if((x>=80)&&(x<=89)) {
+			x = 2;
+		}
+		if((x>=70)&&(x<=79)) {
+			x = 3;
+		}
+		if((x>=60)&&(x<=69)) {
+			x = 4;
+		}
+		if((x>=50)&&(x<=59)) {
+			x = 5;
+		}
+		if((x>=40)&&(x<=49)) {
+			x = 6;
+		}
+		
+		switch(x) {
+		
+		case 1:
+			System.out.println("Excellent: Grade A");
+			break;
+		case 2:
+			System.out.println("Very Good: Grade B");
+			break;
+		case 3:
+			System.out.println("Good: Grade C");
+			break;
+		case 4:
+			System.out.println("Good: Grade D");
+			break;
+		case 5:
+			System.out.println("Good: Grade E");
+			break;
+		case 6:
+			System.out.println("Just Passed: Grade F");
+			break;
+		default:
+			System.out.println("Failed");
+		}
+		
+		sc.close();
+	}
+
+}
