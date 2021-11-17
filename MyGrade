@@ -1,0 +1,34 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class MyGrade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your Grade (A/B/C/D/E/F): ");
+		char x = sc.next().charAt(0);
+		
+		if(x =='A') {
+			System.out.println("Grade A >= 90");
+		}else if(x == 'B') {
+			System.out.println("Grade B >= 80 and less than 90");
+		}else if(x == 'C') {
+			System.out.println("Grade C >= 70 and less than 80");
+		}else if(x == 'D') {
+			System.out.println("Grade D >= 60 and less than 70");
+		}else if(x == 'E') {
+			System.out.println("Grade E >= 50 and less than 60");
+		}else if(x == 'F') {
+			System.out.println("Grade F <=40");
+		}else {
+			System.out.println("Invalid Grade");
+		}
+		
+		sc.close();
+	}
+
+}
