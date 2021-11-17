@@ -1,0 +1,16 @@
+Enter the name of your Subject 1: 
+Math for IT
+Enter the name of your Subject 2: 
+Kenegaraan Malaysia
+Enter the mark of your Subject 1: 
+90
+Enter the mark of your Subject 2: 
+85
+Your Subject 1 is: Math for IT
+Your Subject 1 mark is greater than 50%, PASS: 90
+
+Your Subject 2 is: Kenegaraan Malaysia
+Your Subject 2 is greater than 50%, PASS: 85
+
+Your total mark of Subject 1 is greater than Subject 2 
+Average mark of Subject 1 & 2: Gred A
