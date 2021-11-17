@@ -1,0 +1,31 @@
+package controlStructure;
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int year = 1582;
+		int month = 12;
+		int day = 31;
+		
+		System.out.println((year <= 1581)&& (month <=10) && (day<=2)) ;
+		System.out.println((year <=1582)&&(month <= 12)&&(day<= 31));
+		System.out.println();
+		
+		double d1 = 2.2 + 4.4;
+		double d2 = 6.6;
+		int d3 = 2+4;
+		int d4 = 6;
+		String s1 = "Azman";
+		String s2 = "Azman";
+		
+		System.out.println(d1); //got extract number after the decimal point, for double variable got no exact number as show above
+		System.out.println(d2);
+		System.out.println();
+		System.out.println(d1 == d2); // double variable have no exact value as the number show above
+		System.out.println(d3 == d4);
+		System.out.println(s1 == s2);
+	}
+
+}
