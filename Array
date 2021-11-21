@@ -1,0 +1,29 @@
+package tutorial;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] newArr = new String[5]; //first type to declare array
+		newArr[0]="hello";
+		newArr[1]="hi";
+		newArr[2]="tim";
+		newArr[3]="bill";
+		newArr[4]="joe";
+		
+		System.out.println(newArr[1]);
+		
+		int[] nums = {2,3,54,6,6}; // second ways to declare array
+		int x = nums[4];
+		
+		System.out.println(nums.length);
+		System.out.println(x);
+		
+		double[] nums2 = {2.0,3.0};
+		
+		
+	}
+
+}
